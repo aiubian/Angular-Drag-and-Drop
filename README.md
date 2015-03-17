@@ -4,6 +4,17 @@
 
 # How to use it
 
+Data List 
+
+    $scope.data = [
+        { name: "Anik Islam", age: 22, gender: "Male" },
+        { name: "Mofijul Islam", age: 21, gender: "Male" },
+        { name: "Tanveer Islam", age: 24, gender: "Male" },
+        { name: "Arifa Akter", age: 22, gender: "Female" },
+        { name: "Shayla Islam", age: 22, gender: "Female" }
+
+    ];
+
 Add ```drag-drop``` atrribute in your table 
 
 ```
