@@ -4,8 +4,6 @@
 
 # How to use it
 
-<<<<<<< HEAD
-=======
 Add ```drag-drop``` atrributes in your table 
 
 ```
@@ -41,4 +39,4 @@ Then bind this function with this ```after-drop``` attribute
  ```
  
  
->>>>>>> origin/master
+Chek Demo here in [Plunkr](http://plnkr.co/edit/1qZcq3)
