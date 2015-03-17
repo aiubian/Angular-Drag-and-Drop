@@ -1,3 +1,4 @@
+var app = angular.module("app");
 app.controller("dragDropCtrl", ["$scope", function ($scope) {
     $scope.data = [
         { name: "Anik Islam", age: 22, gender: "Male" },
