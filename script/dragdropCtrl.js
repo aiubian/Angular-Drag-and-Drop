@@ -43,7 +43,7 @@ app.controller("dragDropCtrl", ["$scope", function ($scope) {
                   institution: "United University"
               }, {
                   institution: "East West University"
-              }, , {
+              },  {
                   institution: "American International University"
               }, {
                   institution: "Dania College"
