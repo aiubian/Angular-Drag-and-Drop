@@ -1,0 +1,109 @@
+<!doctype html>
+<html ng-app="app">
+<head>
+    <style>
+        body {
+            text-align: center;
+            background: #000;
+            color: white;
+        }
+
+        table {
+            width: 100%;
+            text-align: center;
+        }
+
+        table, tr, td, th {
+            border: 1px solid #606060;
+        }
+    </style>
+</head>
+<body>
+    <div ng-controller="dragDropCtrl">
+        <h1>Simple Table Drag & Drop (With Visual Change Only)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in data" drag-drop>
+                    <td>{{user.name}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Simple Table Drag & Drop (With Visual & Perpery Change)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in dataWithProperty" drag-drop="{{properties}}">
+                    <td>{{user.name}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Simple Table Drag & Drop (With Visual & Perpery Change and after drop event handle)</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in dataWithProperty" drag-drop="{{properties}}" after-drop="ondrop">
+                    <td>{{user.name}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.gender}}</td>
+                </tr>
+            </tbody>
+        </table>
+        <h1>Complex Table Drag & Drop  in the child level too</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Gender</th>
+                    <th><table><thead><tr><th>Institution</th></tr></thead></table></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr ng-repeat="user in dataComplex" drag-drop>
+                    <td>{{user.name}}</td>
+                    <td>{{user.age}}</td>
+                    <td>{{user.gender}}</td>
+                    <td>
+                        <table>
+                            <tbody>
+                                <tr ng-repeat="education in user.education" drag-drop>
+                                    <td>{{education.institution}}</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+
+    <script src="script/angular.min.js"></script>
+    <script src="script/app.js"></script>
+    <script src="script/dragdrop.js"></script>
+    <script src="script/dragdropCtrl.js"></script>
+</body>
+</html>
