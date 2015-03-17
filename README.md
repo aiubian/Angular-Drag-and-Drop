@@ -4,7 +4,7 @@
 
 # How to use it
 
-Add ```drag-drop``` atrributes in your table 
+Add ```drag-drop``` atrribute in your table 
 
 ```
  <tr ng-repeat="user in data" drag-drop>
@@ -15,7 +15,7 @@ Add ```drag-drop``` atrributes in your table
 ```
 This only change data visually.
 
-If you want to change property during drag and drop then bind property names wtih this ```drag-drop``` attributes
+If you want to change property during drag and drop then bind property names by comma(,) wtih ```drag-drop``` attribute
 
 ```
  <tr ng-repeat="user in data" drag-drop="age,gender">
@@ -32,7 +32,7 @@ $scope.ondrop = function (e) {
         console.log(e);
 }
 ```
-Then bind this function with this ```after-drop``` attribute
+Then bind this function with ```after-drop``` attribute
 
 ```
 <tr ng-repeat="user in dataWithProperty" drag-drop="{{properties}}" after-drop="ondrop">
