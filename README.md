@@ -1,6 +1,6 @@
 # Angular-Drag-and-Drop
 
-[AngularJS](http://angularjs.org/) directive for drag and drop.This directive can drag and drop in the child level too whever the depth of the child is.
+[AngularJS](http://angularjs.org/) directive for drag and drop.This directive can drag and drop in the child level too whatever the depth of the child is.
 
 # How to use it
 
