@@ -51,3 +51,7 @@ Then bind this function with ```after-drop``` attribute
  
  
 Chek Demo here in [Plunkr](http://plnkr.co/edit/1qZcq3)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/anik123/angular-drag-and-drop/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
