@@ -1,4 +1,4 @@
-# Angular-Drag-and-Drop
+# Angular-Drag-and-Drop [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/anik123/angular-drag-and-drop/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
 
 [AngularJS](http://angularjs.org/) directive for drag and drop.This directive can drag and drop in the child level too whatever the depth of the child is.
 
@@ -53,5 +53,5 @@ Then bind this function with ```after-drop``` attribute
 Chek Demo here in [Plunkr](http://plnkr.co/edit/1qZcq3)
 
 
-[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/anik123/angular-drag-and-drop/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
 
